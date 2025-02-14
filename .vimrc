@@ -76,17 +76,12 @@ noremap ti :+tabnext<CR>
 noremap <C-i> :next<CR>
 noremap <C-n> :previous<CR>
 
-" use tab to auto completion 
-inoremap <expr> <Tab> pumvisible() ? coc#_select_confirm() : "\<Tab>"
-inoremap <expr> <S-Tab> pumvisible() ? "\<C-n>" : "\<S-Tab>"
 
 "plugins
 call plug#begin('~/.vim/plugged')
  Plug 'sheerun/vim-polyglot'
  Plug 'prabirshrestha/vim-lsp'          
  Plug 'mattn/vim-lsp-settings'
- Plug 'vim-scripts/AutoComplPop'   " 自动弹出补全菜单
- Plug 'ryanoasis/vim-devicons'     " 补全菜单图标美化
 call plug#end()
 
 
