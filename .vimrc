@@ -83,14 +83,14 @@ inoremap <expr> <S-Tab> pumvisible() ? "\<C-n>" : "\<S-Tab>"
 "plugins
 call plug#begin('~/.vim/plugged')
  Plug 'sheerun/vim-polyglot'
- Plug 'neoclide/coc.nvim', 
+ Plug 'prabirshrestha/vim-lsp'          
+ Plug 'mattn/vim-lsp-settings'
+ Plug 'vim-scripts/AutoComplPop'   " 自动弹出补全菜单
+ Plug 'ryanoasis/vim-devicons'     " 补全菜单图标美化
 call plug#end()
 
-" set themes
-"set background=dark
-"colorscheme gruvbox
-"autocmd Syntax * highlight Comment cterm=None ctermfg=gray guifg=gray
 
-" set Airline themes
-"let g:airline_theme = 'gruvbox'
+
+inoremap <expr> <Tab>   pumvisible() ? "\<C-Y>" : "\<Tab>"  
+inoremap <expr> <S-Tab> pumvisible() ? "\<C-P>" : "\<S-Tab>:
 

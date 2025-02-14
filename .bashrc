@@ -113,6 +113,7 @@ alias vi='vim'
 alias py='python3'
 alias pip='python3 -m pip'
 alias ipy='ipython'
+alias t='tmux'
 
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert
